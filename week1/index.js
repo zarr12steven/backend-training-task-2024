@@ -11,9 +11,9 @@ const alexMembershipID = "GYM2024-12345";
 const isRunningOnTreadmill = true;
 
 // 4. 使用 `console.log()` 輸出 `alexAge`、`alexMembershipID` 和 `isRunningOnTreadmill`。
-console.log(typeof alexAge);
-console.log(typeof alexMembershipID);
-console.log(typeof isRunningOnTreadmill);
+console.log(alexAge);
+console.log(alexMembershipID);
+console.log(isRunningOnTreadmill);
 
 
 // ### 題目二：變數命名練習
@@ -23,10 +23,10 @@ console.log(typeof isRunningOnTreadmill);
 // 情境：Alex 這個月的運動預算有 3000 元
 // 請修改以下中文變數名稱，讓他符合變數語意
 
-const 瑜伽團課 = 300;
-const 重訓團課 = 500;
-const 重訓一對一課程 = 1500;
-const 本月運動預算 = 3000;
+const yugaGroupClass = 300;
+const workoutGroupClass = 500;
+const workoutOneToOneClass = 1500;
+const budgetOfMonth = 3000;
 
 // ### 題目三：變數計算
 // 呈上題，Alex 想要規劃好自己的運動課程，需符合以下三個條件，請將花費總數計算在 AlexBudget 上，一起幫幫他吧！
@@ -40,7 +40,7 @@ const 本月運動預算 = 3000;
 
 // 條件三：一定要花到 2400 以上，並購買 5 堂課程
 
-let AlexBudget = 本月運動預算-((瑜伽團課*3)+重訓一對一課程+重訓團課)
+let AlexBudget = budgetOfMonth - ((yugaGroupClass * 3) + workoutOneToOneClass + budgetOfMonth)
 
 console.log(`Alex 買完課程了，他一共剩下 ${AlexBudget} 元`);
 
@@ -48,9 +48,15 @@ console.log(`Alex 買完課程了，他一共剩下 ${AlexBudget} 元`);
 // 請參考資料夾內 q4.webp 圖片
 // 請依照你看到的內容來嘗試設計變數和值（至少 3 個）
 
-const wholePackage = 2520;
-const coursePrices= 180;
-const discountPrices = 0.9;
+let courseNumber = 14;
+let courseName = `${courseNumber} 堂組合包方案`;
+let wholePackage = 2520;
+let coursePrices = 180;
+let courseMinutes = 50;
+let courseDiscount = 0.9;
+let chooseCourse = courseName;
+
+console.log(`我選擇了 ${courseName}，總共 ${wholePackage} 元，共 ${courseNumber} 堂課，每堂 ${courseMinutes} 分鐘，打 ${courseDiscount} 折後，每堂課程平均價格 ${coursePrices} 元`);
 
 // ### 題目五：布林值與變數定義，看是否有用對 const, let
 // 情境：Alex 在往健身房的路上，望向城市的風景，請描述她看到的一切，並宣告變數與賦予值
@@ -62,7 +68,7 @@ let crossRoad = false;
 
 // 4-2. 目前一起等待的機車有 8 台
 
-let autobike = 8;
+let numberOfMotor = 8;
 
 // 4.3. Alex 望向天空，看到天上有 5 朵白雲和 1 顆太陽
 
@@ -95,9 +101,11 @@ console.log(`Alex 的水壺還有 ${myWater}cc 的水`);
 let totalBill = 0;
 const machineUsePrice = 50;
 const groupClassPrice = 150;
+let hours = 3;
+let groupClasses = 2;
 
-let machineUsePriceTotal = machineUsePrice * 3;
-let groupClassesTotal = groupClassPrice * 2;
+let machineUsePriceTotal = machineUsePrice * hours;
+let groupClassesTotal = groupClassPrice * groupClasses;
 let total = machineUsePriceTotal + groupClassesTotal;
 
 console.log(
@@ -110,7 +118,7 @@ console.log(
 let a = 8;  // 範例：宣告了一個 a 的變數，並賦予了一個 8 的數字型別
 let b = 0;  // 宣告了一個 b 的變數，並賦予了一個 0 的數字型別
 a = 13;     // 讀取 a 這個變數，並且重新賦予了一個 13 的數字型別
-a = b + 4;  // 讀取 a 這個變數，並且把 b 的值加上一個 4 的數字型別
+a = b + 4;  // 先把 b 的值加上一個 4 的數字型別，並將結果重新賦值給 a
 a - b;      // 讀取 a 跟 b 的變數，並把裡面的值做相減
 b += 1;     // 讀取 b 這個變數，把 b 原有的值加上一個 1 的數字型別後，重新賦值給 b
 
