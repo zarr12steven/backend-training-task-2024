@@ -40,7 +40,7 @@ const budgetOfMonth = 3000;
 
 // 條件三：一定要花到 2400 以上，並購買 5 堂課程
 
-let AlexBudget = budgetOfMonth - ((yugaGroupClass * 3) + workoutOneToOneClass + budgetOfMonth)
+let AlexBudget = budgetOfMonth - ((yugaGroupClass * 3 + workoutGroupClass) + workoutOneToOneClass)
 
 console.log(`Alex 買完課程了，他一共剩下 ${AlexBudget} 元`);
 
