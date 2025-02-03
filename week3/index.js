@@ -123,10 +123,10 @@ calculateTotalPrice();
 // https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/some
 
 function filterNoPurchaseMember() {
-  const findNoPurchaseMemeber = members.filter(member => {
+  const findNoPurchaseMembers = members.filter(member => {
     return !purchaseRecords.some(record => record.name === member);
   });
   
-  console.log(`未購買課程的會員有：${res.join(", ")}`); 
+  console.log(`未購買課程的會員有：${findNoPurchaseMembers.join(", ")}`); 
 }
 filterNoPurchaseMember();
